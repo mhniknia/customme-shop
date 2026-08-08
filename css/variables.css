@@ -1,0 +1,112 @@
+:root {
+  /** colors */
+
+  --color-Primary: #a72f3b;
+  --color-Primary-Tint-7: #b95962;
+  --color-Primary-Tint-5: #ca8289;
+  --color-Primary-Tint-6: #dcacb1;
+  --color-Primary-Tint-4: #e5c1c4;
+  --color-Primary-Tint-3: #edd5d8;
+  --color-Primary-Tint-2: #f6eaeb;
+  --color-Primary-Tint-1: #ffffff;
+  --color-Primary-Shade-7: #86262f;
+  --color-Primary-Shade-6: #641c23;
+  --color-Primary-Shade-5: #431318;
+  --color-Primary-Shade-4: #320e12;
+  --color-Primary-Shade-3: #21090c;
+  --color-Primary-Shade-2: #110506;
+  --color-Primary-Shade-1: #000000;
+  --color-Neutral-Gray-1: #f8f8f8;
+  --color-Neutral-Gray-2: #f0f0f0;
+  --color-Neutral-Gray-3: #ededed;
+  --color-Neutral-Gray-4: #d6d6d6;
+  --color-Neutral-Gray-5: #cbcbcb;
+  --color-Neutral-Gray-6: #afafaf;
+  --color-Neutral-Gray-7: #898989;
+  --color-Neutral-Gray-8: #656565;
+  --color-Neutral-Gray-9: #434343;
+  --color-Neutral-Gray-10: #242424;
+  --color-State-Error: #c30000;
+  --color-State-Error-Light: #ed2e2e;
+  --color-State-Error-BG: #fff2f2;
+  --color-State-Warning: #a9791c;
+  --color-State-Warning-Light: #f4b740;
+  --color-State-Warning-BG: #fff8e1;
+  --color-State-Success: #00966d;
+  --color-State-Success-Light: #00ba88;
+  --color-State-Success-BG: #f3fdfa;
+
+  /** font */
+
+  --vazir: "Vazirmatn", sans-serif;
+
+  /** font sizes */
+
+  --fs-h1: 4.4rem;
+  --fs-h2: 4rem;
+  --fs-h3: 3.2rem;
+  --fs-h4: 2.4rem;
+  --fs-h5: 2rem;
+  --fs-h6: 1.8rem;
+  --fs-body-1: 2rem;
+  --fs-body-2: 1.8rem;
+  --fs-body-3: 1.6rem;
+  --fs-body-4: 1.4rem;
+  --fs-body-5: 1.2rem;
+  --fs-body-light: 1.2rem;
+  --fs-caption-1: 1.4rem;
+  --fs-caption-2: 1.2rem;
+  --fs-caption-3: 1rem;
+  --fs-caption-4: 1rem;
+  --fs-btn-1: 1.6rem;
+  --fs-btn-2: 1.4rem;
+  --fs-overline-1: 1.6rem;
+  --fs-overline-2: 1.2rem;
+  --fs-underline-1: 1.6rem;
+  --fs-underline-2: 1.2rem;
+  --fs-underline-2-light: 1rem;
+
+  /** line height  */
+
+  --lh-180: 180%;
+  --lh-140: 140%;
+
+  /** font weights */
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /** spacing */
+
+  --spacing: 1rem;
+  --s-4px: 0.4rem;
+  --s-8px: 0.8rem;
+  --s-12px: 1.2rem;
+  --s-16px: 1.6rem;
+  --s-24px: 2.4rem;
+  --s-28px: 2.8rem;
+  --s-32px: 3.2rem;
+  --s-36px: calc(var(--s-32px) + var(--s-4px));
+  --s-40px: 4rem;
+  --s-44px: 4.4rem;
+  --s-48px: 4.8rem;
+  --s-52px: 5.2rem;
+  --s-56px: 5.6rem;
+  --s-60px: 6rem;
+  --s-64px: 6.4rem;
+  --s-72px: 7.2rem;
+  --s-76px: 7.6rem;
+  --s-80px: 8rem;
+
+  /** border radiuss */
+
+  --radius-sm: 0.8rem;
+  --radius-md: 1.2rem;
+  --radius-lg: 1.6rem;
+
+  /** transitions */
+
+  --transition-fast: 200ms ease-in;
+  --transition-normal: 300ms ease-in;
+}
