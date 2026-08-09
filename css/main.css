@@ -688,3 +688,20 @@ textarea {
   aspect-ratio: 288 / 68;
 }
 
+/* interest */
+
+.interest {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-24px);
+  margin-block: var(--s-32px);
+}
+.interest__products {
+  position: relative;
+}
+.interest__icon {
+  position: absolute;
+  left: -1.9rem;
+  top: 50%;
+  cursor: pointer;
+}
