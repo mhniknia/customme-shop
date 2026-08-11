@@ -229,6 +229,10 @@
   .latest .products .product:nth-child(6) {
     display: block;
   }
+  .newsletter__wrapper {
+    flex-direction: column;
+    gap: 2.6rem;
+  }
 }
 
 /* Mobiles */
@@ -344,6 +348,24 @@
   }
   .cards__btn {
     max-width: 100%;
+  }
+  .newsletter {
+    padding-block: 1.5rem;
+  }
+  .newsletter__form,
+  .newsletter__socials-text {
+    display: none;
+  }
+
+  .newsletter__support,
+  .newsletter__socials-text-mobile,
+  .newsletter__copyright-mobile {
+    display: block;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  .newsletter__copyright-mobile {
+    font-size: 1rem;
   }
 }
 

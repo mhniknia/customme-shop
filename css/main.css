@@ -714,6 +714,7 @@ textarea {
 .newsletter {
   background-color: var(--color-Primary-Shade-6);
   padding-block: 5.26rem;
+  padding-inline: 2rem;
 }
 .newsletter__wrapper {
   display: flex;
@@ -772,3 +773,21 @@ textarea {
   max-width: 3.2rem;
   max-height: 2rem;
 }
+
+.newsletter__support,
+.newsletter__socials-text-mobile,
+.newsletter__copyright-mobile {
+  display: none;
+}
+
+.newsletter__icons {
+  max-width: 2.4rem;
+  max-height: 1.8rem;
+}
+.newsletter__phone {
+  direction: ltr;
+  unicode-bidi: embed;
+  margin-right: 0.5rem;
+}
+
+
