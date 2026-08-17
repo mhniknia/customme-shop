@@ -6,7 +6,8 @@ A modern, responsive, and pixel-perfect e-commerce landing page built with clean
 
 ## 📸 Preview
 
-![Customme Landing Page Preview](./assets/img/preview.png)
+<img width="1920" height="1080" alt="preview" src="https://github.com/user-attachments/assets/ec30f28e-9927-4d30-979b-9094f4f2b976" />
+
 
 ---
 
