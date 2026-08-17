@@ -1,6 +1,6 @@
 /* Container & Grid System */
 .container {
-  width: min(calc(100% - 2rem), 122.4rem);
+  width: min(calc(100% - 3rem), 122.4rem);
   margin-inline: auto;
 }
 
@@ -39,6 +39,10 @@
   .hero::after {
     right: -23.9rem;
     top: -7.7rem;
+  }
+  .designers__pattern-wrapper {
+    width: 6.4rem;
+    height: 6.4rem;
   }
 }
 
@@ -145,6 +149,30 @@
   .header__search-box {
     order: 2;
   }
+  .header__search::placeholder {
+    color: transparent;
+  }
+  .header__search-fake {
+    display: flex;
+    align-items: center;
+    gap: var(--s-4px);
+    position: absolute;
+    top: 50%;
+    right: var(--s-24px);
+    transform: translateY(-50%);
+    font-size: var(--fs-body-4);
+    color: var(--color-Primary);
+    pointer-events: none;
+  }
+  .header__search-fake-logo {
+    height: 1.6rem;
+    width: auto;
+  }
+  .header__search:focus ~ .header__search-fake,
+  .header__search:not(:placeholder-shown) ~ .header__search-fake {
+    display: none;
+  }
+
   .hero {
     padding: var(--s-16px);
   }
@@ -197,6 +225,47 @@
     font-size: var(--fs-body-5);
     white-space: nowrap;
   }
+
+  .category__cards {
+    gap: var(--s-24px);
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+  }
+  .category__cards > * {
+    flex-shrink: 0;
+    width: 14.5rem;
+  }
+  .category__cards {
+    scrollbar-width: none;
+  }
+  .category__cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .section-header::after {
+    display: none;
+  }
+  .section-header__link {
+    margin-right: auto;
+  }
+  .gift__img {
+    border-top-right-radius: var(--radius-md);
+    border-bottom-right-radius: var(--radius-md);
+  }
+  .interest__icon {
+    display: none;
+  }
+
+  .category__arrows {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    order: 3;
+    margin-right: auto;
+  }
+
   .products .product:nth-child(n + 5) {
     display: none;
   }
@@ -226,8 +295,28 @@
   .gift__card-img {
     width: 40%;
   }
+
+  .card__img-wrapper.item-2,
+  .card__img-wrapper.item-4 {
+    display: none;
+  }
+
+  .card__img-wrapper.item-3,
+  .card__img-wrapper.item-5 {
+    grid-column: span 6;
+    aspect-ratio: 152 / 38;
+  }
+
+  .card__img-wrapper.item-1,
+  .card__img-wrapper.item-6 {
+    grid-column: span 3;
+    aspect-ratio: 68 / 84;
+  }
   .latest .products .product:nth-child(6) {
     display: block;
+  }
+  .footer {
+    padding-bottom: calc(8rem + env(safe-area-inset-bottom, 0px));
   }
   .newsletter__wrapper {
     flex-direction: column;
@@ -235,6 +324,31 @@
   }
   .main-footer {
     display: none;
+  }
+  .btm-menu {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--color-Primary);
+    color: var(--color-Neutral-Gray-5);
+    font-size: var(--fs-body-5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+    z-index: 999;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    height: 8rem;
+  }
+  .btm-menu__text--active {
+    color: #fff;
+  }
+  .btm-menu__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -244,6 +358,7 @@
     border-radius: 4rem;
     height: var(--s-40px);
   }
+
   .hero__title {
     font-size: clamp(1.8rem, 3vw, 2.4rem);
   }
@@ -253,7 +368,7 @@
   .section-header__icon {
     display: none;
   }
-  .best__more-link {
+  .section-header__link {
     margin-right: auto;
   }
   .products {
@@ -264,26 +379,26 @@
     grid-column: span 6;
     padding: 0.6rem;
   }
-  .product-title {
+  .product__title {
     font-size: clamp(1.25rem, 3vw, 1.4rem);
   }
-  .product-price {
+  .product__price {
     font-size: var(--fs-body-2);
   }
-  .product-info {
+  .product__info {
     font-size: var(--fs-body-5);
   }
-  .product-img-wrapper {
+  .product__img-wrapper {
     aspect-ratio: 1 / 1;
     width: 9.6rem;
     height: auto;
     margin-inline: auto;
   }
-  .product-img {
+  .product__img {
     object-fit: cover;
     height: 100%;
   }
-  .product-card__color {
+  .product__card-color {
     width: var(--s-12px);
     height: var(--s-12px);
   }
@@ -326,11 +441,15 @@
     grid-column: span 6;
   }
 
-  .designers__card-head {
+  .designers__card-head::before {
+    content: "";
+    position: absolute;
+    inset: 0;
     background-image: url(../assets/img/card-bg.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0.45;
   }
 
   .gift__title {
@@ -351,6 +470,9 @@
   }
   .cards__btn {
     max-width: 100%;
+  }
+  .card__description {
+    margin-block: 1.5rem;
   }
   .newsletter {
     padding-block: 1.5rem;
@@ -437,4 +559,3 @@
     font-size: 1.15rem;
   }
 }
-

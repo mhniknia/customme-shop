@@ -1,6 +1,5 @@
 :root {
-  /** colors */
-
+  /** Colors - Primary */
   --color-Primary: #a72f3b;
   --color-Primary-Tint-7: #b95962;
   --color-Primary-Tint-5: #ca8289;
@@ -16,6 +15,8 @@
   --color-Primary-Shade-3: #21090c;
   --color-Primary-Shade-2: #110506;
   --color-Primary-Shade-1: #000000;
+
+  /** Colors - Neutral Gray */
   --color-Neutral-Gray-1: #f8f8f8;
   --color-Neutral-Gray-2: #f0f0f0;
   --color-Neutral-Gray-3: #ededed;
@@ -26,6 +27,8 @@
   --color-Neutral-Gray-8: #656565;
   --color-Neutral-Gray-9: #434343;
   --color-Neutral-Gray-10: #242424;
+
+  /** Colors - State */
   --color-State-Error: #c30000;
   --color-State-Error-Light: #ed2e2e;
   --color-State-Error-BG: #fff2f2;
@@ -36,12 +39,10 @@
   --color-State-Success-Light: #00ba88;
   --color-State-Success-BG: #f3fdfa;
 
-  /** font */
-
+  /** Font Family */
   --vazir: "Vazirmatn", sans-serif;
 
-  /** font sizes */
-
+  /** Font Sizes */
   --fs-h1: 4.4rem;
   --fs-h2: 4rem;
   --fs-h3: 3.2rem;
@@ -66,19 +67,16 @@
   --fs-underline-2: 1.2rem;
   --fs-underline-2-light: 1rem;
 
-  /** line height  */
-
+  /** Line Heights */
   --lh-180: 180%;
   --lh-140: 140%;
 
-  /** font weights */
-
+  /** Font Weights */
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-bold: 700;
 
-  /** spacing */
-
+  /** Spacing */
   --spacing: 1rem;
   --s-4px: 0.4rem;
   --s-8px: 0.8rem;
@@ -99,14 +97,12 @@
   --s-76px: 7.6rem;
   --s-80px: 8rem;
 
-  /** border radiuss */
-
+  /** Border Radius */
   --radius-sm: 0.8rem;
   --radius-md: 1.2rem;
   --radius-lg: 1.6rem;
 
-  /** transitions */
-
+  /** Transitions */
   --transition-fast: 200ms ease-in;
   --transition-normal: 300ms ease-in;
 }

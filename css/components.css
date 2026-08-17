@@ -1,3 +1,6 @@
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
 .btn {
   display: flex;
   align-items: center;
@@ -8,10 +11,7 @@
   border-radius: var(--radius-sm);
   font-size: var(--fs-body-4);
   cursor: pointer;
-  transition:
-    background-color 0.2s ease,
-    color 0.2s ease,
-    border-color 0.2s ease;
+  transition: all 150ms ease-in-out;
 }
 
 .btn--primary {
@@ -38,11 +38,15 @@
   line-height: 0;
 }
 
+/* ==========================================================================
+   Section Header
+   ========================================================================== */
 .section-header {
   display: flex;
   align-items: center;
   gap: var(--s-16px);
   width: 100%;
+  transition: var(--transition-fast);
 }
 
 .section-header__icon {
@@ -66,6 +70,21 @@
   background-color: var(--color-Neutral-Gray-4);
   order: 3;
 }
+.section-header__link {
+  color: var(--color-Primary);
+  font-size: clamp(1rem, 0.83rem + 0.48vw, 1.4rem);
+  font-weight: var(--fw-bold);
+  white-space: nowrap;
+  order: 4;
+  margin-right: 0;
+}
+.section-header__link:hover {
+  color: var(--color-Neutral-Gray-10);
+}
+
+/* ==========================================================================
+   Product Card Components
+   ========================================================================== */
 
 .products {
   container: products / inline-size;
@@ -79,41 +98,83 @@
   display: flex;
   flex-direction: column;
 }
-.product-img-wrapper {
+
+.product__img-wrapper {
   position: relative;
   width: 100%;
   border-radius: var(--radius-sm);
   overflow: hidden;
   background-color: var(--color-Neutral-Gray-2);
 }
-.product-img {
+.product__img {
   width: 100%;
   height: 25.6rem;
   object-fit: cover;
   display: block;
   border-radius: var(--radius-sm);
 }
-.product-head {
+.product__head {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: var(--s-16px);
 }
-.product-title {
+.product__title {
   font-size: var(--fs-h6);
   font-weight: var(--fw-bold);
 }
-.product-info {
+.product__info {
   font-size: clamp(1.25rem, 3vw, 1.4rem);
   line-height: var(--lh-180);
   font-weight: var(--fw-medium);
-  margin-block: var(--spacing) var(--s-32px);
+  margin-block: var(--spacing) var(--s-24px);
   flex-grow: 1;
 }
-.product-price {
+.product__price {
   display: flex;
   font-size: var(--fs-body-1);
   font-weight: var(--fw-bold);
   margin-top: auto;
   justify-content: flex-end;
+}
+
+/* Color Badges Sub-component */
+.product__card-colors {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.product__card-color {
+  position: relative;
+  width: var(--s-16px);
+  height: var(--s-16px);
+  background-color: var(--color);
+  border-radius: 50%;
+}
+.product__card-color--active {
+  outline: 0.1rem solid var(--color-Neutral-Gray-10);
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.product__card-color:not(:last-child) {
+  margin-inline-end: -0.3rem;
+}
+
+/* Stacking Order for Color Badges */
+.product__card-color:nth-child(1) {
+  z-index: 5;
+}
+.product__card-color:nth-child(2) {
+  z-index: 4;
+}
+.product__card-color:nth-child(3) {
+  z-index: 3;
+}
+.product__card-color:nth-child(4) {
+  z-index: 2;
+}
+.product__card-color:nth-child(5) {
+  z-index: 1;
 }
