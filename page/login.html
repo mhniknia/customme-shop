@@ -144,87 +144,97 @@
 
     <main class="login-page">
       <div class="container">
-        <h1 class="login-page__title">به کاستومی خوش آمدید</h1>
+        <div class="login-page__wrapper">
+          <h1 class="login-page__title">به کاستومی خوش آمدید</h1>
 
-        <section class="login-card">
-            
-          <div class="login-card__logo-wrapper">
-            <img
-              src="../assets/svg/Logo-Type.svg"
-              alt="کاستومی"
-              class="login-card__logo"
-            />
-          </div>
+          <section class="login-card">
+            <div class="login-card__logo-wrapper">
+              <img
+                src="../assets/svg/Logo-Type.svg"
+                alt="کاستومی"
+                class="login-card__logo"
+              />
+            </div>
 
-          <div class="login-card__form">
-            <h2 class="login-card__title">ورود | ثبت نام</h2>
+            <div class="login-card__form">
+              <form action="#" class="login-form">
+                <h2 class="login-card__title">ورود | ثبت نام</h2>
 
-            <form action="#" class="login-form">
-              <div class="login-form__group">
-                <label for="username" class="login-form__label"
-                  >نام کاربری</label
-                >
-                <input
-                  type="text"
-                  id="username"
-                  class="login-form__input"
-                  autocomplete="username"
-                />
-              </div>
-
-              <div class="login-form__group">
-                <label for="password" class="login-form__label"
-                  >کلمه عبور</label
-                >
-                <div class="login-form__password-wrapper">
-                  <input
-                    type="password"
-                    id="password"
-                    class="login-form__input"
-                    autocomplete="current-password"
-                  />
-                  <button
-                    type="button"
-                    class="login-form__toggle-btn"
-                    aria-label="نمایش کلمه عبور"
+                <div class="login-form__group">
+                  <label for="username" class="login-form__label"
+                    >نام کاربری</label
                   >
-                    <img
-                      src="../assets/svg/eye-slash.svg"
-                      class="login-form__eye-password"
-                      alt=""
-                    />
-                  </button>
+                  <input
+                    type="text"
+                    id="username"
+                    class="login-form__input"
+                    autocomplete="username"
+                  />
                 </div>
-              </div>
 
-              <div class="login-form__options">
-                <a href="#" class="login-form__forgot-link">فراموشی رمز عبور</a>
-              </div>
+                <div class="login-form__group">
+                  <label for="password" class="login-form__label"
+                    >کلمه عبور</label
+                  >
+                  <div class="login-form__password-wrapper">
+                    <input
+                      type="password"
+                      id="password"
+                      class="login-form__input"
+                      autocomplete="current-password"
+                    />
+                    <button
+                      type="button"
+                      class="login-form__toggle-btn"
+                      aria-label="نمایش کلمه عبور"
+                    >
+                      <img
+                        src="../assets/svg/eye-slash.svg"
+                        class="login-form__eye-password"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </div>
 
-              <p class="login-form__notice">
-                ورود و عضویت شما به منزله پذیرفتن
-                <a href="#" class="login-form__notice-link">قوانین و مقررات</a>
-                می‌باشد.
-              </p>
+                <div class="login-form__options">
+                  <a href="#" class="login-form__forgot-link"
+                    >فراموشی رمز عبور</a
+                  >
+                </div>
 
-              <button type="submit" class="btn btn--primary">
-                ورود به سایت
-              </button>
-              <button type="button" class="btn btn--outline">
-                <img src="../assets/img/google.png" alt="گوگل" />
-                <span>ورود با حساب گوگل</span>
-              </button>
+                <p class="login-form__notice">
+                  ورود و عضویت شما به منزله پذیرفتن
+                  <a href="#" class="login-form__notice-link"
+                    >قوانین و مقررات</a
+                  >
+                  می‌باشد.
+                </p>
 
-              <div class="login-form__footer">
-                <a href="#" class="login-form__signup-link">ثبت نام در سایت</a>
-              </div>
-            </form>
-          </div>
+                <button type="submit" class="login-form__btn btn btn--primary">
+                  ورود به سایت
+                </button>
+                <button
+                  type="button"
+                  class="login-form__btn-google btn btn--outline"
+                >
+                  <img src="../assets/img/google.png" alt="گوگل" />
+                  <span>ورود با حساب گوگل</span>
+                </button>
 
-          <div class="login-card__photo">
-            <img src="../assets/img/login.png" alt="ورود به حساب" />
-          </div>
-        </section>
+                <div class="login-form__footer">
+                  <a href="#" class="login-form__signup-link"
+                    >ثبت نام در سایت</a
+                  >
+                </div>
+              </form>
+            </div>
+
+            <div class="login-card__photo">
+              <img src="../assets/img/login.png" alt="ورود به حساب" />
+            </div>
+          </section>
+        </div>
       </div>
     </main>
   </body>
