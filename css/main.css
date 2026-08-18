@@ -1,3 +1,14 @@
+
+@import url(./variables.css);
+@import url(./fonts.css);
+@import url(./reset.css);
+@import url(./components.css);
+
+
+@import url(./pages/login.css);
+
+
+
 body {
   font-family: var(--vazir);
   font-weight: var(--fw-regular);
@@ -891,3 +902,5 @@ body {
   color: var(--color-Neutral-Gray-6);
   margin-top: 1rem;
 }
+
+
