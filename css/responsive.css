@@ -350,6 +350,31 @@
     flex-direction: column;
     align-items: center;
   }
+  .header.header__login {
+    display: none;
+  }
+  .login-page__title {
+    display: none;
+  }
+  .login-card__photo img {
+    display: none;
+  }
+  .login-page__wrapper {
+    padding-inline: 0rem;
+   
+  }
+  .login-card__logo-wrapper{
+    display: block;
+    margin-block: -2rem 4rem;
+
+  }
+  .login-card {
+    flex-direction: column;
+  }
+
+
+ 
+
 }
 
 /* Mobiles */

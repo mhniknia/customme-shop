@@ -22,8 +22,7 @@
   justify-content: space-between;
 }
 
-.login-card__logo-wrapper,
-.login-card__logo {
+.login-card__logo-wrapper {
   display: none;
 }
 
