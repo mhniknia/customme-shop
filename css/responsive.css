@@ -363,6 +363,9 @@
   .login-card {
     flex-direction: column;
   }
+   .login-card__form  {
+    width: 100%;
+  }
 }
 
 /* Mobiles */
@@ -505,9 +508,7 @@
   .newsletter__copyright-mobile {
     font-size: 1rem;
   }
-  .login-card__form  {
-    width: 100%;
-  }
+ 
 }
 
 /* Container Queries */
