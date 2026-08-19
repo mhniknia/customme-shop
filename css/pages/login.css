@@ -4,7 +4,7 @@
 }
 
 .login-page__wrapper {
-  padding-inline: 13rem 5.5rem;
+  padding-inline: 5.5rem 5.5rem;
 }
 
 .login-page__title {
@@ -12,7 +12,6 @@
   line-height: var(--lh-140);
   font-size: var(--fs-h4);
   margin-bottom: 6.5rem;
-  max-width: 30.5rem;
   text-align: center;
 }
 
@@ -22,8 +21,7 @@
   justify-content: space-between;
 }
 
-.login-card__logo-wrapper,
-.login-card__logo {
+.login-card__logo-wrapper {
   display: none;
 }
 

@@ -350,6 +350,19 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .login-card__photo img,
+  .login-page__title,
+  .header.header__login {
+    display: none;
+  }
+  .login-card__logo-wrapper {
+    display: block;
+    margin-block: -2rem 4rem;
+  }
+  .login-card {
+    flex-direction: column;
+  }
 }
 
 /* Mobiles */
@@ -491,6 +504,9 @@
   }
   .newsletter__copyright-mobile {
     font-size: 1rem;
+  }
+  .login-card__form  {
+    width: 100%;
   }
 }
 
