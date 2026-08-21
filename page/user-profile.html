@@ -318,26 +318,535 @@
             </li>
           </ul>
         </nav>
+        <div class="profile__container">
+          <!-- Sidebar (Left Side) -->
+          <aside class="profile__sidebar">
+            <div class="profile-card">
+              <div class="profile-card__avatar-wrapper">
+                <img
+                  src="./assets/img/des-1.webp"
+                  alt="نگار زمانی"
+                  class="profile-card__avatar"
+                />
+                <button class="profile-card__avatar-btn" aria-label="تغییر عکس">
+                  <img src="./assets/svg/camera-p.svg" alt="" />
+                </button>
+              </div>
+              <h2 class="profile-card__name">نگار زمانی</h2>
+              <span class="profile-card__email">xxxxxxx@Yahoo.com</span>
 
-        <section class="page-error404">
-          <div class="page-error404__img-wrapper">
-            <img
-              src="../assets/img/404 - not found.png"
-              alt="ارور ۴۰۴"
-              class="page-error404-img"
-            />
+              <div class="profile-card__stats">
+                <div class="profile-card__stat-item">
+                  <span class="profile-card__stat-label">
+                    اعتبار خرید
+                    <a href="#"
+                      ><img src="./assets/svg/add-circle.svg" alt="افزایش"
+                    /></a>
+                  </span>
+                  <span class="profile-card__stat-value">۱۰۰,۰۰۰ تومان</span>
+                </div>
+                <div class="profile-card__stat-item">
+                  <span class="profile-card__stat-label">تعداد طرح ها</span>
+                  <span class="profile-card__stat-value">۴۵</span>
+                </div>
+                <div class="profile-card__stat-item">
+                  <span class="profile-card__stat-label">تعداد سفارش ها</span>
+                  <span class="profile-card__stat-value">۷۰</span>
+                </div>
+              </div>
+
+              <nav class="profile-menu">
+                <ul class="profile-menu__list">
+                  <li class="profile-menu__item profile-menu__item--active">
+                    <a href="#" class="profile-menu__link">
+                      <img src="./assets/svg/home.svg" alt="" />
+                      <span>داشبورد</span>
+                    </a>
+                  </li>
+                  <li class="profile-menu__item">
+                    <a href="#" class="profile-menu__link">
+                      <img src="./assets/svg/Lock 3.svg" alt="" />
+                      <span>تاریخچه سفارشات</span>
+                    </a>
+                  </li>
+                  <li class="profile-menu__item">
+                    <a href="#" class="profile-menu__link">
+                      <img src="./assets/svg/gallery.svg" alt="" />
+                      <span>گالری</span>
+                    </a>
+                  </li>
+                  <li class="profile-menu__item">
+                    <a href="#" class="profile-menu__link">
+                      <img src="./assets/svg/address.svg" alt="" />
+                      <span>آدرس ها</span>
+                    </a>
+                  </li>
+                  <li class="profile-menu__item">
+                    <a href="#" class="profile-menu__link">
+                      <img src="./assets/svg/followers.svg" alt="" />
+                      <span>دنبال شوندگان</span>
+                    </a>
+                  </li>
+                  <li class="profile-menu__item">
+                    <a href="#" class="profile-menu__link">
+                      <img src="./assets/svg/user-info.svg" alt="" />
+                      <span>اطلاعات حساب کاربری</span>
+                    </a>
+                  </li>
+                  <li class="profile-menu__item profile-menu__item--logout">
+                    <a href="#" class="profile-menu__link">
+                      <img src="./assets/svg/exit.svg" alt="" />
+                      <span>خروج</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </aside>
+          <!-- Content (Right Side) -->
+          <div class="profile__content">
+            <!-- Orders Stats -->
+            <section class="profile-orders">
+              <h2 class="profile-orders__title">سفارشات من</h2>
+              <div class="profile-orders__grid">
+                <div class="profile-orders__card">
+                  <div class="profile-orders__info">
+                    <span class="profile-orders__count">۴۵ سفارش</span>
+                    <span class="profile-orders__status">ارسال شده</span>
+                  </div>
+                  <img
+                    src="./assets/svg/truck.svg"
+                    alt=""
+                    class="profile-orders__icon"
+                  />
+                </div>
+
+                <div class="profile-orders__card">
+                  <div class="profile-orders__info">
+                    <span class="profile-orders__count">۴۵ سفارش</span>
+                    <span class="profile-orders__status">در حال پردازش</span>
+                  </div>
+                  <img
+                    src="./assets/svg/processing.svg"
+                    alt=""
+                    class="profile-orders__icon"
+                  />
+                </div>
+
+                <div class="profile-orders__card">
+                  <div class="profile-orders__info">
+                    <span class="profile-orders__count">۱۰ محصول</span>
+                    <span class="profile-orders__status">مرجوعی</span>
+                  </div>
+                  <img
+                    src="./assets/svg/return.svg"
+                    alt=""
+                    class="profile-orders__icon"
+                  />
+                </div>
+
+                <div class="profile-orders__card">
+                  <div class="profile-orders__info">
+                    <span class="profile-orders__count">۴۵ سفارش</span>
+                    <span class="profile-orders__status">جاری</span>
+                  </div>
+                  <img
+                    src="./assets/svg/current.svg"
+                    alt=""
+                    class="profile-orders__icon"
+                  />
+                </div>
+
+                <div class="profile-orders__card">
+                  <div class="profile-orders__info">
+                    <span class="profile-orders__count">۵۴ نظر</span>
+                    <span class="profile-orders__status">ثبت شده</span>
+                  </div>
+                  <img
+                    src="./assets/svg/comment.svg"
+                    alt=""
+                    class="profile-orders__icon"
+                  />
+                </div>
+
+                <div class="profile-orders__card">
+                  <div class="profile-orders__info">
+                    <span class="profile-orders__count">۲۸ محصول</span>
+                    <span class="profile-orders__status">در سبد خرید</span>
+                  </div>
+                  <img
+                    src="./assets/svg/cart-stat.svg"
+                    alt=""
+                    class="profile-orders__icon"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <!-- Wishlist Section -->
+            <section class="profile-section">
+              <div class="profile-section__header">
+                <h2 class="profile-section__title">علاقه‌مندی های من</h2>
+                <a href="#" class="profile-section__link">مشاهده بیشتر</a>
+              </div>
+              <div class="products-grid">
+                <article class="product-card">
+                  <div class="product-card__img-wrapper">
+                    <img
+                      src="./assets/img/bag.jpg"
+                      alt="کیف زنانه"
+                      class="product-card__img"
+                    />
+                  </div>
+                  <div class="product-card__body">
+                    <h3 class="product-card__title">کیف زنانه</h3>
+                    <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
+                    <span class="product-card__price">۱۵۰,۰۰۰ تومان</span>
+                  </div>
+                </article>
+
+                <article class="product-card">
+                  <div class="product-card__img-wrapper">
+                    <img
+                      src="./assets/img/sticker.jpg"
+                      alt="استیکر فرندز"
+                      class="product-card__img"
+                    />
+                  </div>
+                  <div class="product-card__body">
+                    <h3 class="product-card__title">استیکر فرندز</h3>
+                     <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
+                    <span class="product-card__price">۱۵۰,۰۰۰ تومان</span>
+                  </div>
+                </article>
+
+                <article class="product-card">
+                  <div class="product-card__img-wrapper">
+                    <img
+                      src="./assets/img/socks.jpg"
+                      alt="جوراب زنانه"
+                      class="product-card__img"
+                    />
+                  </div>
+                  <div class="product-card__body">
+                    <h3 class="product-card__title">جوراب زنانه</h3>
+                    <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <!-- Frequent Purchases Section -->
+            <section class="profile-section">
+              <div class="profile-section__header">
+                <h2 class="profile-section__title">خریدهای پرتکرار من</h2>
+                <a href="#" class="profile-section__link">مشاهده بیشتر</a>
+              </div>
+              <div class="products-grid">
+                <article class="product-card">
+                  <div class="product-card__img-wrapper">
+                    <img
+                      src="./assets/img/case.jpg"
+                      alt="قاب گوشی آیفون"
+                      class="product-card__img"
+                    />
+                  </div>
+                  <div class="product-card__body">
+                    <h3 class="product-card__title">قاب گوشی آیفون</h3>
+                    <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
+                    <span class="product-card__price">۱۵۰,۰۰۰ تومان</span>
+                  </div>
+                </article>
+
+                <article class="product-card">
+                  <div class="product-card__img-wrapper">
+                    <img
+                      src="./assets/img/cap.jpg"
+                      alt="کلاه مردانه"
+                      class="product-card__img"
+                    />
+                  </div>
+                  <div class="product-card__body">
+                    <h3 class="product-card__title">کلاه مردانه</h3>
+                    <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
+                    <span class="product-card__price">۱۵۰,۰۰۰ تومان</span>
+                  </div>
+                </article>
+
+                <article class="product-card">
+                  <div class="product-card__img-wrapper">
+                    <img
+                      src="./assets/img/tshirt.jpg"
+                      alt="تیشرت زنانه"
+                      class="product-card__img"
+                    />
+                  </div>
+                  <div class="product-card__body">
+                    <h3 class="product-card__title">تیشرت زنانه</h3>
+                    <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <!-- Gallery Section -->
+            <section class="profile-section">
+              <div class="profile-section__header">
+                <h2 class="profile-section__title">گالری من</h2>
+                <a href="#" class="profile-section__link">مشاهده بیشتر</a>
+              </div>
+              <div class="products-grid">
+                <article class="product-card">
+                  <div class="product-card__img-wrapper">
+                    <img
+                      src="./assets/img/design-1.jpg"
+                      alt="طرح گالری"
+                      class="product-card__img"
+                    />
+                  </div>
+                </article>
+
+                <article class="product-card">
+                  <div class="product-card__img-wrapper">
+                    <img
+                      src="./assets/img/design-2.jpg"
+                      alt="استیکر هندوانه"
+                      class="product-card__img"
+                    />
+                  </div>
+                  <div class="product-card__body">
+                    <h3 class="product-card__title">استیکر هندوانه</h3>
+                    <p class="product-card__desc">فایل طراحی و چاپ بر روی...</p>
+                  </div>
+                </article>
+
+                <article class="product-card">
+                  <div class="product-card__img-wrapper">
+                    <img
+                      src="./assets/img/design-3.jpg"
+                      alt="استیکر دخترونه"
+                      class="product-card__img"
+                    />
+                  </div>
+                  <div class="product-card__body">
+                    <h3 class="product-card__title">استیکر دخترونه</h3>
+                    <p class="product-card__desc">فایل طراحی و چاپ بر روی...</p>
+                  </div>
+                </article>
+              </div>
+            </section>
           </div>
-          <h1 class="page-error404__title">صفحه مورد نظر یافت نشد</h1>
-          <a href="#" class="page-error404__link btn btn--outline">
-            <img
-              src="../assets/svg/arrow-right-404.svg"
-              alt="برگشت به صحفه اصلی"
-              class="page-error404__icon"
-            />
-            <span class="page-error404__link-text">بازگشت به صفحه اصلی</span>
-          </a>
-        </section>
+        </div>
       </main>
     </div>
+
+    
+     <footer class="footer section-space">
+      <div class="newsletter">
+        <div class="container">
+          <div class="newsletter__wrapper">
+            <form action="#" class="newsletter__form">
+              <p class="newsletter__form-text">
+                برای دریافت آخرین اخبار و تخفیف های جدید،ایمیل خود را وارد
+                نمایید
+              </p>
+              <div class="newsletter__form-wrapper">
+                <input
+                  type="email"
+                  class="newsletter__input"
+                  placeholder="ایمیل شما"
+                />
+                <button type="submit" class="newsletter__btn">ثبت</button>
+              </div>
+            </form>
+
+            <p class="newsletter__support">
+              تماس با پشتیبانی:
+              <span class="newsletter__phone">۰۲۱-۳۴۵۶۰۰۰</span>
+            </p>
+
+            <div class="newsletter__socials">
+              <p class="newsletter__socials-text">
+                ما را در شبکه های اجتماعی دنبال کنید
+              </p>
+              <p class="newsletter__socials-text-mobile">
+                پاسخگویی ۲۴ ساعته ، ۷ روز هفته
+              </p>
+              <div class="newsletter__socials-wrapper">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="newsletter__link"
+                  aria-label="Youtube"
+                >
+                  <img
+                    src="./assets/svg/g10.svg"
+                    alt="youtube"
+                    class="newsletter__icons"
+                  />
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="newsletter__link"
+                  aria-label="Pinterest"
+                >
+                  <img
+                    src="./assets/svg/Pinterest svg.svg"
+                    alt="pinterest"
+                    class="newsletter__icons"
+                  />
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="newsletter__link"
+                  aria-label="Facebook"
+                >
+                  <img
+                    src="./assets/svg/174-1744532_facebook-icon-link-facebook-white-icon-hd-png-fotor-bg-remover-2023041811029 1.svg"
+                    alt="facebook"
+                    class="newsletter__icons"
+                  />
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="newsletter__link"
+                  aria-label="Instagram"
+                >
+                  <img
+                    src="./assets/svg/Instagram svg.svg"
+                    alt="instagram"
+                    class="newsletter__icons"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <p class="newsletter__copyright-mobile">
+              تمام حقوق این وبسایت متعلق به فروشگاه آنلاین کاستومی می باشد
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-footer">
+        <div class="container">
+          <div class="main-footer__wrapper">
+            <div class="main-footer__right">
+              <div class="main-footer__right-wrapper">
+                <div class="main-footer__list-wrapper">
+                  <h4 class="main-footer__list-title">همراه با کاستومی</h4>
+                  <ul class="main-footer-list">
+                    <li class="main-footer-list__item">
+                      <a href="#" class="main-footer__link">فروش محصولات</a>
+                    </li>
+                    <li class="main-footer-list__item">
+                      <a href="#" class="main-footer__link">فرصت همکاری</a>
+                    </li>
+                    <li class="main-footer-list__item">
+                      <a href="#" class="main-footer__link">تماس با ما</a>
+                    </li>
+                    <li class="main-footer-list__item">
+                      <a href="#" class="main-footer__link">نقشه سایت</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="main-footer__list-wrapper">
+                  <h4 class="main-footer__list-title">خدمات مشتریان</h4>
+                  <ul class="main-footer-list">
+                    <li class="main-footer-list__item">
+                      <a href="#" class="main-footer__link">سوالات متداول</a>
+                    </li>
+                    <li class="main-footer-list__item">
+                      <a href="#" class="main-footer__link">حریم خصوصی</a>
+                    </li>
+                    <li class="main-footer-list__item">
+                      <a href="#" class="main-footer__link">ثبت شکایت</a>
+                    </li>
+                    <li class="main-footer-list__item">
+                      <a href="#" class="main-footer__link"
+                        >ضمانت نامه محصولات</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="main-footer__list-wrapper">
+                  <h4 class="main-footer__list-title">راهنمای خرید</h4>
+                  <ul class="main-footer-list">
+                    <li class="main-footer-list__item">
+                      <a href="#" class="main-footer__link"
+                        >راهنمای ثبت سفارش</a
+                      >
+                    </li>
+                    <li class="main-footer-list__item">
+                      <a href="#" class="main-footer__link">شیوه های پرداخت</a>
+                    </li>
+                    <li class="main-footer-list__item">
+                      <a href="#" class="main-footer__link"
+                        >نحوه ارسال سفارش ها</a
+                      >
+                    </li>
+                    <li class="main-footer-list__item">
+                      <a href="#" class="main-footer__link"
+                        >شرایط بازگرداندن محصول</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="main-footer__left">
+              <h3 class="main-footer__left-title">فروشگاه اینترنتی کاستومی</h3>
+              <div class="main-footer__left-info-wrapper">
+                <p class="main-footer__support">
+                  تماس با پشتیبانی:
+                  <span class="main-footer__phone">۰۲۱-۳۴۵۶۰۰۰</span>
+                </p>
+                <p class="main-footer__support">
+                  پاسخگویی ۲۴ ساعته ، ۷ روز هفته
+                </p>
+              </div>
+
+              <div class="main-footer__imgs-wrapper">
+                <a href="#" class="main-footer__img-link">
+                  <div class="main-footer__img-frame">
+                    <img
+                      src="assets/img/01.webp"
+                      alt="اینماد"
+                      class="main-footer__img"
+                    />
+                  </div>
+                </a>
+
+                <a href="#" class="main-footer__img-link">
+                  <div class="main-footer__img-frame">
+                    <img
+                      src="assets/img/02.webp"
+                      alt="نشان ملی ثبت"
+                      class="main-footer__img"
+                    />
+                  </div>
+                </a>
+
+                <a href="#" class="main-footer__img-link">
+                  <div class="main-footer__img-frame">
+                    <img
+                      src="assets/img/03 1.webp"
+                      alt="اتحادیه کشوری کسب و کار های مجازی"
+                      class="main-footer__img"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <p class="main-footer__copyright">
+            تمام حقوق این وبسایت متعلق به فروشگاه آنلاین کاستومی می باشد
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

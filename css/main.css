@@ -6,7 +6,8 @@
 
 
 @import url(./pages/login.css);
-
+@import url(./pages/error-404.css);
+@import url(./pages/user-profile.css);
 
 
 body {
@@ -136,6 +137,8 @@ body {
   width: calc(var(--spacing) * 2.2);
   height: 0.2rem;
   background-color: var(--color-Neutral-Gray-10);
+  transition: var( --transition-fast);
+  will-change: transform;
 }
 .nav-btn__line {
   position: relative;
