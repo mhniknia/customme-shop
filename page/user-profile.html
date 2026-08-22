@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>خطا ۴۰۴ | صحفه مورد نظر یافت نشد</title>
+    <title>پروفایل من | کاستومی</title>
 
     <!-- SEO & Metadata -->
     <meta
@@ -318,31 +318,34 @@
             </li>
           </ul>
         </nav>
+
+        <h1 class="profile__title">پروفایل</h1>
+
         <div class="profile__container">
           <!-- Sidebar (Left Side) -->
           <aside class="profile__sidebar">
             <div class="profile-card">
               <div class="profile-card__avatar-wrapper">
                 <img
-                  src="./assets/img/des-1.webp"
+                  src="../assets/img/des-1.webp"
                   alt="نگار زمانی"
                   class="profile-card__avatar"
                 />
-                <button class="profile-card__avatar-btn" aria-label="تغییر عکس">
-                  <img src="./assets/svg/camera-p.svg" alt="" />
-                </button>
+                <div class="profile-card__avatar-btn" aria-label="تغییر عکس">
+                  <img src="../assets/svg/camera-p.svg" alt="" />
+                </div>
               </div>
-              <h2 class="profile-card__name">نگار زمانی</h2>
+              <h3 class="profile-card__name">نگار زمانی</h3>
               <span class="profile-card__email">xxxxxxx@Yahoo.com</span>
 
               <div class="profile-card__stats">
                 <div class="profile-card__stat-item">
-                  <span class="profile-card__stat-label">
-                    اعتبار خرید
-                    <a href="#"
-                      ><img src="./assets/svg/add-circle.svg" alt="افزایش"
-                    /></a>
-                  </span>
+                  <div class="profile-card__stat-label"> اعتبار خرید 
+                  <a href="#"
+                    >
+                    <img src="../assets/svg/add-circle.svg" alt="افزایش profile-card__stat-icon"
+                  /></a>
+                   </div>
                   <span class="profile-card__stat-value">۱۰۰,۰۰۰ تومان</span>
                 </div>
                 <div class="profile-card__stat-item">
@@ -359,43 +362,43 @@
                 <ul class="profile-menu__list">
                   <li class="profile-menu__item profile-menu__item--active">
                     <a href="#" class="profile-menu__link">
-                      <img src="./assets/svg/home.svg" alt="" />
+                      <img src="../assets/svg/home.svg" alt="" />
                       <span>داشبورد</span>
                     </a>
                   </li>
                   <li class="profile-menu__item">
                     <a href="#" class="profile-menu__link">
-                      <img src="./assets/svg/Lock 3.svg" alt="" />
+                      <img src="../assets/svg/Lock 3.svg" alt="" />
                       <span>تاریخچه سفارشات</span>
                     </a>
                   </li>
                   <li class="profile-menu__item">
                     <a href="#" class="profile-menu__link">
-                      <img src="./assets/svg/gallery.svg" alt="" />
+                      <img src="../assets/svg/gallery.svg" alt="" />
                       <span>گالری</span>
                     </a>
                   </li>
                   <li class="profile-menu__item">
                     <a href="#" class="profile-menu__link">
-                      <img src="./assets/svg/address.svg" alt="" />
+                      <img src="../assets/svg/address.svg" alt="" />
                       <span>آدرس ها</span>
                     </a>
                   </li>
                   <li class="profile-menu__item">
                     <a href="#" class="profile-menu__link">
-                      <img src="./assets/svg/followers.svg" alt="" />
+                      <img src="../assets/svg/followers.svg" alt="" />
                       <span>دنبال شوندگان</span>
                     </a>
                   </li>
                   <li class="profile-menu__item">
                     <a href="#" class="profile-menu__link">
-                      <img src="./assets/svg/user-info.svg" alt="" />
+                      <img src="../assets/svg/user-info.svg" alt="" />
                       <span>اطلاعات حساب کاربری</span>
                     </a>
                   </li>
                   <li class="profile-menu__item profile-menu__item--logout">
                     <a href="#" class="profile-menu__link">
-                      <img src="./assets/svg/exit.svg" alt="" />
+                      <img src="../assets/svg/exit.svg" alt="" />
                       <span>خروج</span>
                     </a>
                   </li>
@@ -408,231 +411,991 @@
             <!-- Orders Stats -->
             <section class="profile-orders">
               <h2 class="profile-orders__title">سفارشات من</h2>
-              <div class="profile-orders__grid">
+              <div class="profile-orders__grid grid">
                 <div class="profile-orders__card">
+                       <img
+                    src="../assets/svg/more-circle.svg"
+                    alt=""
+                    class="profile-orders__icon"
+                  />
+                  <div class="profile-orders__info">
+                 
+                    <span class="profile-orders__count">۴۵ سفارش</span>
+                    <span class="profile-orders__status">جاری</span>
+                  </div>
+                
+                </div>
+
+                <div class="profile-orders__card">
+                    <img
+                    src="../assets/svg/Lock 7.svg"
+                    alt=""
+                    class="profile-orders__icon"
+                  />
                   <div class="profile-orders__info">
                     <span class="profile-orders__count">۴۵ سفارش</span>
                     <span class="profile-orders__status">ارسال شده</span>
                   </div>
-                  <img
-                    src="./assets/svg/truck.svg"
-                    alt=""
-                    class="profile-orders__icon"
-                  />
+                
                 </div>
 
                 <div class="profile-orders__card">
-                  <div class="profile-orders__info">
-                    <span class="profile-orders__count">۴۵ سفارش</span>
-                    <span class="profile-orders__status">در حال پردازش</span>
-                  </div>
-                  <img
-                    src="./assets/svg/processing.svg"
+                   <img
+                    src="../assets/svg/Lock 6.svg"
                     alt=""
                     class="profile-orders__icon"
                   />
-                </div>
-
-                <div class="profile-orders__card">
                   <div class="profile-orders__info">
                     <span class="profile-orders__count">۱۰ محصول</span>
-                    <span class="profile-orders__status">مرجوعی</span>
+                    <span class="profile-orders__status">در گالری</span>
                   </div>
-                  <img
-                    src="./assets/svg/return.svg"
-                    alt=""
-                    class="profile-orders__icon"
-                  />
+                 
                 </div>
 
                 <div class="profile-orders__card">
-                  <div class="profile-orders__info">
-                    <span class="profile-orders__count">۴۵ سفارش</span>
-                    <span class="profile-orders__status">جاری</span>
-                  </div>
-                  <img
-                    src="./assets/svg/current.svg"
+                    <img
+                    src="../assets/svg/comment.svg"
                     alt=""
                     class="profile-orders__icon"
                   />
-                </div>
-
-                <div class="profile-orders__card">
                   <div class="profile-orders__info">
                     <span class="profile-orders__count">۵۴ نظر</span>
                     <span class="profile-orders__status">ثبت شده</span>
                   </div>
-                  <img
-                    src="./assets/svg/comment.svg"
-                    alt=""
-                    class="profile-orders__icon"
-                  />
+                
                 </div>
 
                 <div class="profile-orders__card">
-                  <div class="profile-orders__info">
-                    <span class="profile-orders__count">۲۸ محصول</span>
-                    <span class="profile-orders__status">در سبد خرید</span>
-                  </div>
-                  <img
-                    src="./assets/svg/cart-stat.svg"
+                    <img
+                    src="../assets/svg/close-circle.svg"
                     alt=""
                     class="profile-orders__icon"
                   />
+                  <div class="profile-orders__info">
+                    <span class="profile-orders__count">۲۱۵ سفارش</span>
+                    <span class="profile-orders__status">لغو شده</span>
+                  </div>
+                
+                </div>
+
+                <div class="profile-orders__card">
+                     <img
+                    src="../assets/svg/bag-happy.svg"
+                    alt=""
+                    class="profile-orders__icon"
+                  />
+                  <div class="profile-orders__info">
+                    <span class="profile-orders__count">۲۸ محصول</span>
+                    <span class="profile-orders__status">فیزیکی</span>
+                  </div>
+               
                 </div>
               </div>
             </section>
 
-            <!-- Wishlist Section -->
-            <section class="profile-section">
-              <div class="profile-section__header">
-                <h2 class="profile-section__title">علاقه‌مندی های من</h2>
-                <a href="#" class="profile-section__link">مشاهده بیشتر</a>
+            <section class="interest section-space">
+              <div class="section-header section-header--line-hide">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20 37.9182C18.8333 37.9182 17.65 37.4682 16.7667 36.5849L13.9167 33.7682C13.2167 33.0682 12.25 32.6849 11.2667 32.6849H10C6.55 32.6849 3.75 29.9016 3.75 26.4849V8.30151C3.75 4.88485 6.55 2.10156 10 2.10156H30C33.45 2.10156 36.25 4.88485 36.25 8.30151V26.4849C36.25 29.9016 33.45 32.6849 30 32.6849H28.7333C27.75 32.6849 26.7833 33.0849 26.0833 33.7682L23.2333 36.5849C22.35 37.4682 21.1667 37.9182 20 37.9182ZM10 4.58488C7.93333 4.58488 6.25 6.2515 6.25 8.28483V26.4682C6.25 28.5182 7.93333 30.1682 10 30.1682H11.2667C12.9167 30.1682 14.5167 30.8349 15.6833 31.9849L18.5333 34.8016C19.35 35.6016 20.6667 35.6016 21.4834 34.8016L24.3333 31.9849C25.5 30.8349 27.1 30.1682 28.75 30.1682H30C32.0667 30.1682 33.75 28.5016 33.75 26.4682V8.28483C33.75 6.23483 32.0667 4.58488 30 4.58488H10Z"
+                    fill="#242424"
+                  />
+                  <path
+                    d="M19.9989 26.2474C19.6989 26.2474 19.399 26.1974 19.1323 26.114C16.9323 25.364 11.2656 22.0474 11.2656 15.8474C11.2656 12.8474 13.699 10.4141 16.6823 10.4141C17.899 10.4141 19.0656 10.8307 20.0156 11.5641C20.9656 10.8307 22.1323 10.4141 23.349 10.4141C26.3323 10.4141 28.7656 12.8474 28.7656 15.8474C28.7656 22.0474 23.0823 25.364 20.899 26.114C20.599 26.1974 20.2989 26.2474 19.9989 26.2474ZM16.6656 12.9141C15.0656 12.9141 13.7489 14.2307 13.7489 15.8474C13.7489 20.5641 18.3323 23.1974 19.9323 23.7474C19.9489 23.7474 20.0156 23.7474 20.0656 23.7474C21.6823 23.1807 26.2323 20.5474 26.2323 15.8641C26.2323 14.2474 24.9323 12.9307 23.3156 12.9307C22.3989 12.9307 21.5489 13.3641 20.9823 14.0974C20.5156 14.7308 19.449 14.7308 18.9823 14.0974C18.449 13.3474 17.5989 12.9141 16.6656 12.9141Z"
+                    fill="#242424"
+                  />
+                </svg>
+
+                <h2 class="section-header__title">علاقمندی ها</h2>
+                <a href="#" class="section-header__link">مشاهده بیشتر</a>
               </div>
-              <div class="products-grid">
-                <article class="product-card">
-                  <div class="product-card__img-wrapper">
+
+              <button
+                type="button"
+                class="interest__icon"
+                aria-label="اسکرول قبلی"
+              >
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_3814_48573)">
+                    <mask
+                      id="mask0_3814_48573"
+                      style="mask-type: luminance"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="40"
+                      height="40"
+                    >
+                      <path
+                        d="M40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40C31.0457 40 40 31.0457 40 20Z"
+                        fill="white"
+                      />
+                    </mask>
+                    <g mask="url(#mask0_3814_48573)">
+                      <path
+                        d="M40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40C31.0457 40 40 31.0457 40 20Z"
+                        fill="#DCACB1"
+                        fill-opacity="0.5"
+                      />
+                      <path d="M44 -4H-4V44H44V-4Z" fill="white" />
+                      <path
+                        d="M20 41.5C8.14 41.5 -1.5 31.86 -1.5 20C-1.5 8.14 8.14 -1.5 20 -1.5C31.86 -1.5 41.5 8.14 41.5 20C41.5 31.86 31.86 41.5 20 41.5ZM20 1.5C9.8 1.5 1.5 9.8 1.5 20C1.5 30.2 9.8 38.5 20 38.5C30.2 38.5 38.5 30.2 38.5 20C38.5 9.8 30.2 1.5 20 1.5Z"
+                        fill="#86262F"
+                      />
+                      <path
+                        d="M27 21.5H15C14.18 21.5 13.5 20.82 13.5 20C13.5 19.18 14.18 18.5 15 18.5H27C27.82 18.5 28.5 19.18 28.5 20C28.5 20.82 27.82 21.5 27 21.5Z"
+                        fill="#86262F"
+                      />
+                      <path
+                        d="M18.9989 27.5028C18.6189 27.5028 18.2389 27.3628 17.9389 27.0628L11.9389 21.0628C11.3589 20.4828 11.3589 19.5228 11.9389 18.9428L17.9389 12.9428C18.5189 12.3628 19.4789 12.3628 20.0589 12.9428C20.6389 13.5228 20.6389 14.4828 20.0589 15.0628L15.1189 20.0028L20.0589 24.9428C20.6389 25.5228 20.6389 26.4828 20.0589 27.0628C19.7589 27.3628 19.3789 27.5028 18.9989 27.5028Z"
+                        fill="#86262F"
+                      />
+                    </g>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_3814_48573">
+                      <rect width="40" height="40" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+
+              <div class="products interest__products">
+                <div class="product">
+                  <div class="product__img-wrapper">
                     <img
-                      src="./assets/img/bag.jpg"
+                      src="../assets/img/r-1.jpg"
                       alt="کیف زنانه"
-                      class="product-card__img"
+                      class="product__img"
+                      loading="lazy"
+                      decoding="async"
                     />
+                    <div class="product__card-colors">
+                      <span
+                        class="product__card-color"
+                        style="--color: #ff6652"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #4d8c7a"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #fbb03b"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #c1272d"
+                      ></span>
+                      <span
+                        class="product__card-color product__card-color--active"
+                        style="--color: #fce8e6"
+                      ></span>
+                    </div>
                   </div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__title">کیف زنانه</h3>
-                    <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
-                    <span class="product-card__price">۱۵۰,۰۰۰ تومان</span>
+                  <div class="product__head">
+                    <h3 class="product__title">کیف زنانه</h3>
+                    <button
+                      type="button"
+                      class="icon-btn product-fav"
+                      aria-label="افزودن به علاقه‌مندی‌ها"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product__icon"
+                      >
+                        <use href="#icon-heart"></use>
+                      </svg>
+                    </button>
                   </div>
-                </article>
+                  <p class="product__info">دارای رنگ بندی، قابل طراحی</p>
+                  <span class="product__price"> ۱۵۰,۰۰۰ تومان</span>
+                </div>
 
-                <article class="product-card">
-                  <div class="product-card__img-wrapper">
+                <div class="product">
+                  <div class="product__img-wrapper">
                     <img
-                      src="./assets/img/sticker.jpg"
-                      alt="استیکر فرندز"
-                      class="product-card__img"
-                    />
-                  </div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__title">استیکر فرندز</h3>
-                     <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
-                    <span class="product-card__price">۱۵۰,۰۰۰ تومان</span>
-                  </div>
-                </article>
-
-                <article class="product-card">
-                  <div class="product-card__img-wrapper">
-                    <img
-                      src="./assets/img/socks.jpg"
+                      src="../assets/img/r-2.jpg"
                       alt="جوراب زنانه"
-                      class="product-card__img"
+                      class="product__img"
+                      loading="lazy"
+                      decoding="async"
                     />
+                    <div class="product__card-colors">
+                      <span
+                        class="product__card-color"
+                        style="--color: #ff6652"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #4d8c7a"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #fbb03b"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #c1272d"
+                      ></span>
+                      <span
+                        class="product__card-color product__card-color--active"
+                        style="--color: #fce8e6"
+                      ></span>
+                    </div>
                   </div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__title">جوراب زنانه</h3>
-                    <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
+                  <div class="product__head">
+                    <h3 class="product__title">جوراب زنانه</h3>
+                    <button
+                      type="button"
+                      class="icon-btn product-fav"
+                      aria-label="افزودن به علاقه‌مندی‌ها"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product__icon"
+                      >
+                        <use href="#icon-heart"></use>
+                      </svg>
+                    </button>
                   </div>
-                </article>
+                  <p class="product__info">دارای رنگ بندی، قابل طراحی</p>
+                  <span class="product__price"> ۱۵۰,۰۰۰ تومان</span>
+                </div>
+
+                <div class="product">
+                  <div class="product__img-wrapper">
+                    <img
+                      src="../assets/img/r-3.jpg"
+                      alt="قاب موبایل آیفون"
+                      class="product__img"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div class="product__card-colors">
+                      <span
+                        class="product__card-color"
+                        style="--color: #ff6652"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #4d8c7a"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #fbb03b"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #c1272d"
+                      ></span>
+                      <span
+                        class="product__card-color product__card-color--active"
+                        style="--color: #fce8e6"
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="product__head">
+                    <h3 class="product__title">قاب موبایل آیفون</h3>
+                    <button
+                      type="button"
+                      class="icon-btn product-fav"
+                      aria-label="افزودن به علاقه‌مندی‌ها"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product__icon"
+                      >
+                        <use href="#icon-heart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <p class="product__info">دارای رنگ بندی، قابل طراحی</p>
+                  <span class="product__price"> ۱۵۰,۰۰۰ تومان</span>
+                </div>
+
+                <div class="product">
+                  <div class="product__img-wrapper">
+                    <img
+                      src="../assets/img/r-4.jpg"
+                      alt="تیشرت مردانه"
+                      class="product__img"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div class="product__card-colors">
+                      <span
+                        class="product__card-color"
+                        style="--color: #ff6652"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #4d8c7a"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #fbb03b"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #c1272d"
+                      ></span>
+                      <span
+                        class="product__card-color product__card-color--active"
+                        style="--color: #fce8e6"
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="product__head">
+                    <h3 class="product__title">تیشرت مردانه</h3>
+                    <button
+                      type="button"
+                      class="icon-btn product-fav"
+                      aria-label="افزودن به علاقه‌مندی‌ها"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product__icon"
+                      >
+                        <use href="#icon-heart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <p class="product__info">دارای رنگ بندی، قابل طراحی</p>
+                  <span class="product__price"> ۱۵۰,۰۰۰ تومان</span>
+                </div>
               </div>
             </section>
 
-            <!-- Frequent Purchases Section -->
-            <section class="profile-section">
-              <div class="profile-section__header">
-                <h2 class="profile-section__title">خریدهای پرتکرار من</h2>
-                <a href="#" class="profile-section__link">مشاهده بیشتر</a>
+            <section class="interest section-space">
+              <div class="section-header section-header--line-hide">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20 37.9182C18.8333 37.9182 17.65 37.4682 16.7667 36.5849L13.9167 33.7682C13.2167 33.0682 12.25 32.6849 11.2667 32.6849H10C6.55 32.6849 3.75 29.9016 3.75 26.4849V8.30151C3.75 4.88485 6.55 2.10156 10 2.10156H30C33.45 2.10156 36.25 4.88485 36.25 8.30151V26.4849C36.25 29.9016 33.45 32.6849 30 32.6849H28.7333C27.75 32.6849 26.7833 33.0849 26.0833 33.7682L23.2333 36.5849C22.35 37.4682 21.1667 37.9182 20 37.9182ZM10 4.58488C7.93333 4.58488 6.25 6.2515 6.25 8.28483V26.4682C6.25 28.5182 7.93333 30.1682 10 30.1682H11.2667C12.9167 30.1682 14.5167 30.8349 15.6833 31.9849L18.5333 34.8016C19.35 35.6016 20.6667 35.6016 21.4834 34.8016L24.3333 31.9849C25.5 30.8349 27.1 30.1682 28.75 30.1682H30C32.0667 30.1682 33.75 28.5016 33.75 26.4682V8.28483C33.75 6.23483 32.0667 4.58488 30 4.58488H10Z"
+                    fill="#242424"
+                  />
+                  <path
+                    d="M19.9989 26.2474C19.6989 26.2474 19.399 26.1974 19.1323 26.114C16.9323 25.364 11.2656 22.0474 11.2656 15.8474C11.2656 12.8474 13.699 10.4141 16.6823 10.4141C17.899 10.4141 19.0656 10.8307 20.0156 11.5641C20.9656 10.8307 22.1323 10.4141 23.349 10.4141C26.3323 10.4141 28.7656 12.8474 28.7656 15.8474C28.7656 22.0474 23.0823 25.364 20.899 26.114C20.599 26.1974 20.2989 26.2474 19.9989 26.2474ZM16.6656 12.9141C15.0656 12.9141 13.7489 14.2307 13.7489 15.8474C13.7489 20.5641 18.3323 23.1974 19.9323 23.7474C19.9489 23.7474 20.0156 23.7474 20.0656 23.7474C21.6823 23.1807 26.2323 20.5474 26.2323 15.8641C26.2323 14.2474 24.9323 12.9307 23.3156 12.9307C22.3989 12.9307 21.5489 13.3641 20.9823 14.0974C20.5156 14.7308 19.449 14.7308 18.9823 14.0974C18.449 13.3474 17.5989 12.9141 16.6656 12.9141Z"
+                    fill="#242424"
+                  />
+                </svg>
+
+                <h2 class="section-header__title">علاقمندی ها</h2>
+                <a href="#" class="section-header__link">مشاهده بیشتر</a>
               </div>
-              <div class="products-grid">
-                <article class="product-card">
-                  <div class="product-card__img-wrapper">
-                    <img
-                      src="./assets/img/case.jpg"
-                      alt="قاب گوشی آیفون"
-                      class="product-card__img"
-                    />
-                  </div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__title">قاب گوشی آیفون</h3>
-                    <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
-                    <span class="product-card__price">۱۵۰,۰۰۰ تومان</span>
-                  </div>
-                </article>
 
-                <article class="product-card">
-                  <div class="product-card__img-wrapper">
-                    <img
-                      src="./assets/img/cap.jpg"
-                      alt="کلاه مردانه"
-                      class="product-card__img"
-                    />
-                  </div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__title">کلاه مردانه</h3>
-                    <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
-                    <span class="product-card__price">۱۵۰,۰۰۰ تومان</span>
-                  </div>
-                </article>
+              <button
+                type="button"
+                class="interest__icon"
+                aria-label="اسکرول قبلی"
+              >
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_3814_48573)">
+                    <mask
+                      id="mask0_3814_48573"
+                      style="mask-type: luminance"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="40"
+                      height="40"
+                    >
+                      <path
+                        d="M40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40C31.0457 40 40 31.0457 40 20Z"
+                        fill="white"
+                      />
+                    </mask>
+                    <g mask="url(#mask0_3814_48573)">
+                      <path
+                        d="M40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40C31.0457 40 40 31.0457 40 20Z"
+                        fill="#DCACB1"
+                        fill-opacity="0.5"
+                      />
+                      <path d="M44 -4H-4V44H44V-4Z" fill="white" />
+                      <path
+                        d="M20 41.5C8.14 41.5 -1.5 31.86 -1.5 20C-1.5 8.14 8.14 -1.5 20 -1.5C31.86 -1.5 41.5 8.14 41.5 20C41.5 31.86 31.86 41.5 20 41.5ZM20 1.5C9.8 1.5 1.5 9.8 1.5 20C1.5 30.2 9.8 38.5 20 38.5C30.2 38.5 38.5 30.2 38.5 20C38.5 9.8 30.2 1.5 20 1.5Z"
+                        fill="#86262F"
+                      />
+                      <path
+                        d="M27 21.5H15C14.18 21.5 13.5 20.82 13.5 20C13.5 19.18 14.18 18.5 15 18.5H27C27.82 18.5 28.5 19.18 28.5 20C28.5 20.82 27.82 21.5 27 21.5Z"
+                        fill="#86262F"
+                      />
+                      <path
+                        d="M18.9989 27.5028C18.6189 27.5028 18.2389 27.3628 17.9389 27.0628L11.9389 21.0628C11.3589 20.4828 11.3589 19.5228 11.9389 18.9428L17.9389 12.9428C18.5189 12.3628 19.4789 12.3628 20.0589 12.9428C20.6389 13.5228 20.6389 14.4828 20.0589 15.0628L15.1189 20.0028L20.0589 24.9428C20.6389 25.5228 20.6389 26.4828 20.0589 27.0628C19.7589 27.3628 19.3789 27.5028 18.9989 27.5028Z"
+                        fill="#86262F"
+                      />
+                    </g>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_3814_48573">
+                      <rect width="40" height="40" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
 
-                <article class="product-card">
-                  <div class="product-card__img-wrapper">
+              <div class="products interest__products">
+                <div class="product">
+                  <div class="product__img-wrapper">
                     <img
-                      src="./assets/img/tshirt.jpg"
-                      alt="تیشرت زنانه"
-                      class="product-card__img"
+                      src="../assets/img/r-1.jpg"
+                      alt="کیف زنانه"
+                      class="product__img"
+                      loading="lazy"
+                      decoding="async"
                     />
+                    <div class="product__card-colors">
+                      <span
+                        class="product__card-color"
+                        style="--color: #ff6652"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #4d8c7a"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #fbb03b"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #c1272d"
+                      ></span>
+                      <span
+                        class="product__card-color product__card-color--active"
+                        style="--color: #fce8e6"
+                      ></span>
+                    </div>
                   </div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__title">تیشرت زنانه</h3>
-                    <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
+                  <div class="product__head">
+                    <h3 class="product__title">کیف زنانه</h3>
+                    <button
+                      type="button"
+                      class="icon-btn product-fav"
+                      aria-label="افزودن به علاقه‌مندی‌ها"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product__icon"
+                      >
+                        <use href="#icon-heart"></use>
+                      </svg>
+                    </button>
                   </div>
-                </article>
+                  <p class="product__info">دارای رنگ بندی، قابل طراحی</p>
+                  <span class="product__price"> ۱۵۰,۰۰۰ تومان</span>
+                </div>
+
+                <div class="product">
+                  <div class="product__img-wrapper">
+                    <img
+                      src="../assets/img/r-2.jpg"
+                      alt="جوراب زنانه"
+                      class="product__img"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div class="product__card-colors">
+                      <span
+                        class="product__card-color"
+                        style="--color: #ff6652"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #4d8c7a"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #fbb03b"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #c1272d"
+                      ></span>
+                      <span
+                        class="product__card-color product__card-color--active"
+                        style="--color: #fce8e6"
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="product__head">
+                    <h3 class="product__title">جوراب زنانه</h3>
+                    <button
+                      type="button"
+                      class="icon-btn product-fav"
+                      aria-label="افزودن به علاقه‌مندی‌ها"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product__icon"
+                      >
+                        <use href="#icon-heart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <p class="product__info">دارای رنگ بندی، قابل طراحی</p>
+                  <span class="product__price"> ۱۵۰,۰۰۰ تومان</span>
+                </div>
+
+                <div class="product">
+                  <div class="product__img-wrapper">
+                    <img
+                      src="../assets/img/r-3.jpg"
+                      alt="قاب موبایل آیفون"
+                      class="product__img"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div class="product__card-colors">
+                      <span
+                        class="product__card-color"
+                        style="--color: #ff6652"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #4d8c7a"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #fbb03b"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #c1272d"
+                      ></span>
+                      <span
+                        class="product__card-color product__card-color--active"
+                        style="--color: #fce8e6"
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="product__head">
+                    <h3 class="product__title">قاب موبایل آیفون</h3>
+                    <button
+                      type="button"
+                      class="icon-btn product-fav"
+                      aria-label="افزودن به علاقه‌مندی‌ها"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product__icon"
+                      >
+                        <use href="#icon-heart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <p class="product__info">دارای رنگ بندی، قابل طراحی</p>
+                  <span class="product__price"> ۱۵۰,۰۰۰ تومان</span>
+                </div>
+
+                <div class="product">
+                  <div class="product__img-wrapper">
+                    <img
+                      src="../assets/img/r-4.jpg"
+                      alt="تیشرت مردانه"
+                      class="product__img"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div class="product__card-colors">
+                      <span
+                        class="product__card-color"
+                        style="--color: #ff6652"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #4d8c7a"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #fbb03b"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #c1272d"
+                      ></span>
+                      <span
+                        class="product__card-color product__card-color--active"
+                        style="--color: #fce8e6"
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="product__head">
+                    <h3 class="product__title">تیشرت مردانه</h3>
+                    <button
+                      type="button"
+                      class="icon-btn product-fav"
+                      aria-label="افزودن به علاقه‌مندی‌ها"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product__icon"
+                      >
+                        <use href="#icon-heart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <p class="product__info">دارای رنگ بندی، قابل طراحی</p>
+                  <span class="product__price"> ۱۵۰,۰۰۰ تومان</span>
+                </div>
               </div>
             </section>
 
-            <!-- Gallery Section -->
-            <section class="profile-section">
-              <div class="profile-section__header">
-                <h2 class="profile-section__title">گالری من</h2>
-                <a href="#" class="profile-section__link">مشاهده بیشتر</a>
+            <section class="interest section-space">
+              <div class="section-header section-header--line-hide">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20 37.9182C18.8333 37.9182 17.65 37.4682 16.7667 36.5849L13.9167 33.7682C13.2167 33.0682 12.25 32.6849 11.2667 32.6849H10C6.55 32.6849 3.75 29.9016 3.75 26.4849V8.30151C3.75 4.88485 6.55 2.10156 10 2.10156H30C33.45 2.10156 36.25 4.88485 36.25 8.30151V26.4849C36.25 29.9016 33.45 32.6849 30 32.6849H28.7333C27.75 32.6849 26.7833 33.0849 26.0833 33.7682L23.2333 36.5849C22.35 37.4682 21.1667 37.9182 20 37.9182ZM10 4.58488C7.93333 4.58488 6.25 6.2515 6.25 8.28483V26.4682C6.25 28.5182 7.93333 30.1682 10 30.1682H11.2667C12.9167 30.1682 14.5167 30.8349 15.6833 31.9849L18.5333 34.8016C19.35 35.6016 20.6667 35.6016 21.4834 34.8016L24.3333 31.9849C25.5 30.8349 27.1 30.1682 28.75 30.1682H30C32.0667 30.1682 33.75 28.5016 33.75 26.4682V8.28483C33.75 6.23483 32.0667 4.58488 30 4.58488H10Z"
+                    fill="#242424"
+                  />
+                  <path
+                    d="M19.9989 26.2474C19.6989 26.2474 19.399 26.1974 19.1323 26.114C16.9323 25.364 11.2656 22.0474 11.2656 15.8474C11.2656 12.8474 13.699 10.4141 16.6823 10.4141C17.899 10.4141 19.0656 10.8307 20.0156 11.5641C20.9656 10.8307 22.1323 10.4141 23.349 10.4141C26.3323 10.4141 28.7656 12.8474 28.7656 15.8474C28.7656 22.0474 23.0823 25.364 20.899 26.114C20.599 26.1974 20.2989 26.2474 19.9989 26.2474ZM16.6656 12.9141C15.0656 12.9141 13.7489 14.2307 13.7489 15.8474C13.7489 20.5641 18.3323 23.1974 19.9323 23.7474C19.9489 23.7474 20.0156 23.7474 20.0656 23.7474C21.6823 23.1807 26.2323 20.5474 26.2323 15.8641C26.2323 14.2474 24.9323 12.9307 23.3156 12.9307C22.3989 12.9307 21.5489 13.3641 20.9823 14.0974C20.5156 14.7308 19.449 14.7308 18.9823 14.0974C18.449 13.3474 17.5989 12.9141 16.6656 12.9141Z"
+                    fill="#242424"
+                  />
+                </svg>
+
+                <h2 class="section-header__title">علاقمندی ها</h2>
+                <a href="#" class="section-header__link">مشاهده بیشتر</a>
               </div>
-              <div class="products-grid">
-                <article class="product-card">
-                  <div class="product-card__img-wrapper">
-                    <img
-                      src="./assets/img/design-1.jpg"
-                      alt="طرح گالری"
-                      class="product-card__img"
-                    />
-                  </div>
-                </article>
 
-                <article class="product-card">
-                  <div class="product-card__img-wrapper">
-                    <img
-                      src="./assets/img/design-2.jpg"
-                      alt="استیکر هندوانه"
-                      class="product-card__img"
-                    />
-                  </div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__title">استیکر هندوانه</h3>
-                    <p class="product-card__desc">فایل طراحی و چاپ بر روی...</p>
-                  </div>
-                </article>
+              <button
+                type="button"
+                class="interest__icon"
+                aria-label="اسکرول قبلی"
+              >
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_3814_48573)">
+                    <mask
+                      id="mask0_3814_48573"
+                      style="mask-type: luminance"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="40"
+                      height="40"
+                    >
+                      <path
+                        d="M40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40C31.0457 40 40 31.0457 40 20Z"
+                        fill="white"
+                      />
+                    </mask>
+                    <g mask="url(#mask0_3814_48573)">
+                      <path
+                        d="M40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40C31.0457 40 40 31.0457 40 20Z"
+                        fill="#DCACB1"
+                        fill-opacity="0.5"
+                      />
+                      <path d="M44 -4H-4V44H44V-4Z" fill="white" />
+                      <path
+                        d="M20 41.5C8.14 41.5 -1.5 31.86 -1.5 20C-1.5 8.14 8.14 -1.5 20 -1.5C31.86 -1.5 41.5 8.14 41.5 20C41.5 31.86 31.86 41.5 20 41.5ZM20 1.5C9.8 1.5 1.5 9.8 1.5 20C1.5 30.2 9.8 38.5 20 38.5C30.2 38.5 38.5 30.2 38.5 20C38.5 9.8 30.2 1.5 20 1.5Z"
+                        fill="#86262F"
+                      />
+                      <path
+                        d="M27 21.5H15C14.18 21.5 13.5 20.82 13.5 20C13.5 19.18 14.18 18.5 15 18.5H27C27.82 18.5 28.5 19.18 28.5 20C28.5 20.82 27.82 21.5 27 21.5Z"
+                        fill="#86262F"
+                      />
+                      <path
+                        d="M18.9989 27.5028C18.6189 27.5028 18.2389 27.3628 17.9389 27.0628L11.9389 21.0628C11.3589 20.4828 11.3589 19.5228 11.9389 18.9428L17.9389 12.9428C18.5189 12.3628 19.4789 12.3628 20.0589 12.9428C20.6389 13.5228 20.6389 14.4828 20.0589 15.0628L15.1189 20.0028L20.0589 24.9428C20.6389 25.5228 20.6389 26.4828 20.0589 27.0628C19.7589 27.3628 19.3789 27.5028 18.9989 27.5028Z"
+                        fill="#86262F"
+                      />
+                    </g>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_3814_48573">
+                      <rect width="40" height="40" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
 
-                <article class="product-card">
-                  <div class="product-card__img-wrapper">
+              <div class="products interest__products">
+                <div class="product">
+                  <div class="product__img-wrapper">
                     <img
-                      src="./assets/img/design-3.jpg"
-                      alt="استیکر دخترونه"
-                      class="product-card__img"
+                      src="../assets/img/r-1.jpg"
+                      alt="کیف زنانه"
+                      class="product__img"
+                      loading="lazy"
+                      decoding="async"
                     />
+                    <div class="product__card-colors">
+                      <span
+                        class="product__card-color"
+                        style="--color: #ff6652"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #4d8c7a"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #fbb03b"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #c1272d"
+                      ></span>
+                      <span
+                        class="product__card-color product__card-color--active"
+                        style="--color: #fce8e6"
+                      ></span>
+                    </div>
                   </div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__title">استیکر دخترونه</h3>
-                    <p class="product-card__desc">فایل طراحی و چاپ بر روی...</p>
+                  <div class="product__head">
+                    <h3 class="product__title">کیف زنانه</h3>
+                    <button
+                      type="button"
+                      class="icon-btn product-fav"
+                      aria-label="افزودن به علاقه‌مندی‌ها"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product__icon"
+                      >
+                        <use href="#icon-heart"></use>
+                      </svg>
+                    </button>
                   </div>
-                </article>
+                  <p class="product__info">دارای رنگ بندی، قابل طراحی</p>
+                  <span class="product__price"> ۱۵۰,۰۰۰ تومان</span>
+                </div>
+
+                <div class="product">
+                  <div class="product__img-wrapper">
+                    <img
+                      src="../assets/img/r-2.jpg"
+                      alt="جوراب زنانه"
+                      class="product__img"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div class="product__card-colors">
+                      <span
+                        class="product__card-color"
+                        style="--color: #ff6652"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #4d8c7a"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #fbb03b"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #c1272d"
+                      ></span>
+                      <span
+                        class="product__card-color product__card-color--active"
+                        style="--color: #fce8e6"
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="product__head">
+                    <h3 class="product__title">جوراب زنانه</h3>
+                    <button
+                      type="button"
+                      class="icon-btn product-fav"
+                      aria-label="افزودن به علاقه‌مندی‌ها"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product__icon"
+                      >
+                        <use href="#icon-heart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <p class="product__info">دارای رنگ بندی، قابل طراحی</p>
+                  <span class="product__price"> ۱۵۰,۰۰۰ تومان</span>
+                </div>
+
+                <div class="product">
+                  <div class="product__img-wrapper">
+                    <img
+                      src="../assets/img/r-3.jpg"
+                      alt="قاب موبایل آیفون"
+                      class="product__img"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div class="product__card-colors">
+                      <span
+                        class="product__card-color"
+                        style="--color: #ff6652"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #4d8c7a"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #fbb03b"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #c1272d"
+                      ></span>
+                      <span
+                        class="product__card-color product__card-color--active"
+                        style="--color: #fce8e6"
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="product__head">
+                    <h3 class="product__title">قاب موبایل آیفون</h3>
+                    <button
+                      type="button"
+                      class="icon-btn product-fav"
+                      aria-label="افزودن به علاقه‌مندی‌ها"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product__icon"
+                      >
+                        <use href="#icon-heart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <p class="product__info">دارای رنگ بندی، قابل طراحی</p>
+                  <span class="product__price"> ۱۵۰,۰۰۰ تومان</span>
+                </div>
+
+                <div class="product">
+                  <div class="product__img-wrapper">
+                    <img
+                      src="../assets/img/r-4.jpg"
+                      alt="تیشرت مردانه"
+                      class="product__img"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div class="product__card-colors">
+                      <span
+                        class="product__card-color"
+                        style="--color: #ff6652"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #4d8c7a"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #fbb03b"
+                      ></span>
+                      <span
+                        class="product__card-color"
+                        style="--color: #c1272d"
+                      ></span>
+                      <span
+                        class="product__card-color product__card-color--active"
+                        style="--color: #fce8e6"
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="product__head">
+                    <h3 class="product__title">تیشرت مردانه</h3>
+                    <button
+                      type="button"
+                      class="icon-btn product-fav"
+                      aria-label="افزودن به علاقه‌مندی‌ها"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product__icon"
+                      >
+                        <use href="#icon-heart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <p class="product__info">دارای رنگ بندی، قابل طراحی</p>
+                  <span class="product__price"> ۱۵۰,۰۰۰ تومان</span>
+                </div>
               </div>
             </section>
           </div>
@@ -640,8 +1403,7 @@
       </main>
     </div>
 
-    
-     <footer class="footer section-space">
+    <footer class="footer section-space">
       <div class="newsletter">
         <div class="container">
           <div class="newsletter__wrapper">
@@ -680,7 +1442,7 @@
                   aria-label="Youtube"
                 >
                   <img
-                    src="./assets/svg/g10.svg"
+                    src="../assets/svg/g10.svg"
                     alt="youtube"
                     class="newsletter__icons"
                   />
@@ -692,7 +1454,7 @@
                   aria-label="Pinterest"
                 >
                   <img
-                    src="./assets/svg/Pinterest svg.svg"
+                    src="../assets/svg/Pinterest svg.svg"
                     alt="pinterest"
                     class="newsletter__icons"
                   />
@@ -704,7 +1466,7 @@
                   aria-label="Facebook"
                 >
                   <img
-                    src="./assets/svg/174-1744532_facebook-icon-link-facebook-white-icon-hd-png-fotor-bg-remover-2023041811029 1.svg"
+                    src="../assets/svg/174-1744532_facebook-icon-link-facebook-white-icon-hd-png-fotor-bg-remover-2023041811029 1.svg"
                     alt="facebook"
                     class="newsletter__icons"
                   />
@@ -716,7 +1478,7 @@
                   aria-label="Instagram"
                 >
                   <img
-                    src="./assets/svg/Instagram svg.svg"
+                    src="../assets/svg/Instagram svg.svg"
                     alt="instagram"
                     class="newsletter__icons"
                   />
@@ -813,7 +1575,7 @@
                 <a href="#" class="main-footer__img-link">
                   <div class="main-footer__img-frame">
                     <img
-                      src="assets/img/01.webp"
+                      src="../assets/img/01.webp"
                       alt="اینماد"
                       class="main-footer__img"
                     />
@@ -823,7 +1585,7 @@
                 <a href="#" class="main-footer__img-link">
                   <div class="main-footer__img-frame">
                     <img
-                      src="assets/img/02.webp"
+                      src="../assets/img/02.webp"
                       alt="نشان ملی ثبت"
                       class="main-footer__img"
                     />
@@ -833,7 +1595,7 @@
                 <a href="#" class="main-footer__img-link">
                   <div class="main-footer__img-frame">
                     <img
-                      src="assets/img/03 1.webp"
+                      src="../assets/img/03 1.webp"
                       alt="اتحادیه کشوری کسب و کار های مجازی"
                       class="main-footer__img"
                     />
