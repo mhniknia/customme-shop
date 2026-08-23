@@ -1,6 +1,6 @@
 .profile__container {
   display: flex;
-  gap: 3rem;
+  gap: 2.2rem;
   margin-bottom: 6rem;
 }
 .profile__title {
@@ -9,13 +9,14 @@
   margin-block: 3rem 1.5rem;
 }
 .profile__sidebar {
-  flex-basis: 30%;
+  flex-basis: 30.5%;
+  flex-shrink: 0;
 }
 .profile-card {
-  max-width: 39.2rem;
+  max-width: 40rem;
   border: 0.1rem solid var(--color-Neutral-Gray-3);
   border-radius: var(--radius-lg);
-  padding: 2.2rem 2.6rem;
+  padding: 2.2rem 2.9rem;
   color: var(--color-Neutral-Gray-9);
 }
 .profile-card__avatar-wrapper {
@@ -60,24 +61,38 @@
 .profile-card__stats {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
-  font-size: var(--fs-body-2);
-
+  gap: clamp(0.8rem, 1.5vw, 1.6rem);
+  font-size: clamp(1.1rem, 1.2vw + 0.5rem, var(--fs-body-2));
   margin-block: 2rem 4rem;
 }
 .profile-card__stat-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: clamp(0.5rem, 1vw, 1rem);
 }
 .profile-card__stat-label {
   display: flex;
   align-items: center;
+  gap: 0.6rem;
 }
-.profile-card__stat-icon {
-}
+.profile-card__stat-label,
 .profile-card__stat-value {
+  white-space: nowrap;
 }
+.profile-card__stat-label a {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.profile-card__stat-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  display: block;
+}
+
 .profile-menu {
   display: flex;
   flex-direction: column;
@@ -107,26 +122,37 @@
 }
 
 .profile__content {
-  flex-basis: 70%;
+  flex-basis: 69.5%;
   max-width: 100%;
   border: 0.1rem solid var(--color-Neutral-Gray-3);
   border-radius: var(--radius-lg);
-  padding: 1.8rem 2rem;
+  padding: 2.5rem 2rem 2rem 0rem;
 }
 .section-header.section-header--line-hide.section-header::after {
   display: none;
+}
+.profile-orders {
+  width: 100%;
+  max-width: 82rem;
+  margin: 0 auto 4rem auto;
+}
+.profile-orders__grid {
+  gap: 2rem 3rem;
+  justify-items: center;
+  align-items: center;
 }
 
 .profile-orders__title {
   margin-bottom: 4rem;
 }
-.profile-orders__grid {
-  justify-content: center;
-}
+
 .profile-orders__card {
   grid-column: span 4;
   display: flex;
-  gap: 0.5rem;
+  justify-content: flex-start;
+  gap: 0.8rem;
+  width: 100%;
+  align-items: center;
 }
 .profile-orders__info {
   display: flex;

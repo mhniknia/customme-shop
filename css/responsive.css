@@ -363,9 +363,30 @@
   .login-card {
     flex-direction: column;
   }
-   .login-card__form  {
+  .login-card__form {
     width: 100%;
   }
+  .profile__title {
+    display: none;
+  }
+  .profile__container {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .profile__sidebar,
+  .profile__content {
+    flex-basis: 100%;
+  }
+
+  .profile__content {
+    border: none;
+    padding: 0rem;
+  }
+  .profile-card {
+    max-width: 100%;
+    border: none;
+  }
+
 }
 
 /* Mobiles */
@@ -508,7 +529,6 @@
   .newsletter__copyright-mobile {
     font-size: 1rem;
   }
- 
 }
 
 /* Container Queries */
