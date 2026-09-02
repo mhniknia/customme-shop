@@ -4,7 +4,7 @@
 }
 
 .login-page__wrapper {
-  padding-inline: 5.5rem 5.5rem;
+  padding-inline: 1.5rem;
 }
 
 .login-page__title {
@@ -66,7 +66,7 @@
 
 .login-form__label {
   color: var(--color-Neutral-Gray-5);
-  font-size: var(--fs-body-4);
+  font-size: var(--fs-body-3);
 }
 
 .login-form__input {
@@ -79,9 +79,7 @@
   font-size: 1.4rem;
 }
 
-.login-form__input:focus {
-  border-color: var(--color-Primary);
-}
+
 
 .login-form__password-wrapper {
   position: relative;
@@ -167,4 +165,20 @@
   font-size: 1.6rem;
   font-weight: var(--fw-bold);
   text-decoration: none;
+}
+
+
+/* for js Codes */
+
+
+.unsuccess {
+  font-size: var(--fs-body-4);
+  color: var(--color-State-Error);
+  padding-top: 0.65rem;
+}
+.unsuccess--label {
+ color: var(--color-State-Error);
+}
+.unsuccess--input {
+border: 0.2rem solid var(--color-State-Error);
 }

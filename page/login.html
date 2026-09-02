@@ -57,7 +57,7 @@
             <span class="header__search-fake" aria-hidden="true">
               جستجو در
               <img
-                src="./assets/svg/TYPE.svg"
+                src="../assets/svg/TYPE.svg"
                 alt=""
                 class="header__search-fake-logo"
               />
@@ -142,7 +142,7 @@
       </div>
     </header>
 
-    <main class="login-page">
+    <main class="login-page login-page--blur">
       <div class="container">
         <div class="login-page__wrapper">
           <h1 class="login-page__title">به کاستومی خوش آمدید</h1>
@@ -161,27 +161,30 @@
                 <h2 class="login-card__title">ورود | ثبت نام</h2>
 
                 <div class="login-form__group">
-                  <label for="username" class="login-form__label"
+                  <label for="username" class="login-form__label username--label"
                     >نام کاربری</label
                   >
                   <input
                     type="text"
                     id="username"
-                    class="login-form__input"
+                    class="login-form__input  username--input"
                     autocomplete="username"
+                    value=""
                   />
+                  <p class="form--username hidden"></p>
                 </div>
 
                 <div class="login-form__group">
-                  <label for="password" class="login-form__label"
+                  <label for="password" class="login-form__label password--label"
                     >کلمه عبور</label
                   >
                   <div class="login-form__password-wrapper">
                     <input
                       type="password"
                       id="password"
-                      class="login-form__input"
+                      class="login-form__input password--input"
                       autocomplete="current-password"
+                      value=""
                     />
                     <button
                       type="button"
@@ -190,11 +193,12 @@
                     >
                       <img
                         src="../assets/svg/eye-slash.svg"
-                        class="login-form__eye-password"
+                        class="login-form__eye-password form--show-password"
                         alt=""
                       />
                     </button>
                   </div>
+                    <p class="form--password hidden"></p>
                 </div>
 
                 <div class="login-form__options">
@@ -237,5 +241,7 @@
         </div>
       </div>
     </main>
+
+    <script src="../js/validation.js"></script>
   </body>
 </html>
