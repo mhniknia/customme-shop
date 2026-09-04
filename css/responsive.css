@@ -139,7 +139,7 @@
     display: none;
   }
   .nav-btn {
-    display: block;
+     display: inline-flex;
     order: 1;
   }
   .header__logo-mobile {

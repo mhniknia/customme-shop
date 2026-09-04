@@ -1,14 +1,13 @@
-
 @import url(./variables.css);
 @import url(./fonts.css);
 @import url(./reset.css);
 @import url(./components.css);
 
-
 @import url(./pages/login.css);
 @import url(./pages/error-404.css);
 @import url(./pages/user-profile.css);
 @import url(./designers.css);
+
 
 
 body {
@@ -18,12 +17,41 @@ body {
   font-size: var(--fs-body-3);
 }
 
+
+::-webkit-scrollbar {
+  width: 0.9rem;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-Neutral-Gray-10);
+  opacity: 0.3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-Primary);
+  border-radius: 10rem;
+  height: 8rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, var(--color-Primary) 80%, transparent);
+}
+
 /* helper class */
 .item-center {
   align-items: center;
 }
 .section-space {
   margin-top: var(--s-36px);
+}
+body.no-scroll {
+  overflow: hidden;
 }
 
 /* Header */
@@ -132,30 +160,120 @@ body {
 .nav-btn {
   display: none;
 }
+.nav-btn {
+  --line-gap: 0.6rem;
+  --line-angle: 45deg;
+
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 101;
+}
+
 .nav-btn__line,
 .nav-btn__line::before,
 .nav-btn__line::after {
   width: calc(var(--spacing) * 2.2);
   height: 0.2rem;
   background-color: var(--color-Neutral-Gray-10);
-  transition: var( --transition-fast);
-  will-change: transform;
+  border-radius: var(--radius-lg);
+  transition: var(--transition-fast);
+  will-change: transform, background-color;
 }
+
 .nav-btn__line {
   position: relative;
   display: block;
-  border-radius: var(--radius-lg);
 }
+
 .nav-btn__line::before,
 .nav-btn__line::after {
   content: "";
   position: absolute;
+  right: 0;
 }
+
 .nav-btn__line::before {
-  transform: translateY(-0.6rem);
+  transform: translateY(calc(var(--line-gap) * -1));
 }
+
 .nav-btn__line::after {
-  transform: translateY(0.6rem);
+  transform: translateY(var(--line-gap));
+}
+
+.nav-btn.nav-btn--open .nav-btn__line {
+  background-color: transparent;
+}
+
+.nav-btn.nav-btn--open .nav-btn__line::before {
+  transform: translateY(0) rotate(var(--line-angle));
+}
+
+.nav-btn.nav-btn--open .nav-btn__line::after {
+  transform: translateY(0) rotate(calc(var(--line-angle) * -1));
+}
+
+/* SidebarMenu */
+
+.sidebar-menu {
+  position: fixed;
+  inset: 0;
+  width: 75%;
+  z-index: 100;
+  background-color: #fff;
+  overflow-y: auto;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.sidebar-menu.sidebar-menu--open {
+  transform: translateX(0);
+}
+
+.sidebar-menu__group {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-menu__group + .sidebar-menu__group {
+  margin-top: 2.5rem;
+}
+.sidebar-menu__list--first {
+  margin-top: 15rem;
+}
+.sidebar-menu__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3rem 1.5rem;
+  text-decoration: none;
+}
+
+.sidebar-menu__list--first .sidebar-menu__text {
+  font-size: var(--fs-body-4);
+  font-weight: 500;
+  color: var(--color-Neutral-Gray-10);
+}
+
+.sidebar-menu__list--first .sidebar-menu__arrow {
+  width: 2.4rem;
+  height: 2.4rem;
+  flex-shrink: 0;
+}
+.sidebar-menu__text {
+  font-size: var(--fs-body-3);
+  font-weight: 500;
+  color: var(--color-Neutral-Gray-10);
+}
+
+.sidebar-menu__arrow {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
 }
 
 /* Nav */
@@ -686,7 +804,6 @@ body {
 .card__img-wrapper:nth-child(6) img {
   object-position: 50% 39%;
   transform: scale(1.1) translateZ(0);
-  
 }
 
 /* interest */
@@ -906,5 +1023,3 @@ body {
   color: var(--color-Neutral-Gray-6);
   margin-top: 1rem;
 }
-
-

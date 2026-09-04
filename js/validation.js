@@ -43,7 +43,7 @@ function loginPasswordKeyup() {
 }
 
 function loginPasswordBlur() {
-    const passwordValue = passwordInputEl.value.trim();
+    const passwordValue = passwordInputEl.value;
 
     if (passwordValue.length === 0) {
         showPasswordError("فیلد نمی‌تواند خالی باشد");
